@@ -37,6 +37,14 @@
     <OutputPath>.\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Developer' ">
+    <OutputPath>.\Developer\</OutputPath>
+    <SitecoreDeployFolder>C:\Projects\GrantThornton\Website</SitecoreDeployFolder>
+    <SitecoreWebUrl>http://grantthornton</SitecoreWebUrl>
+    <SitecoreAccessGuid>99ea78e0-81e2-4d7c-b0a3-68952ea82046</SitecoreAccessGuid>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
       <Value>$(AssemblyFileVersion)</Value>
